@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent1: #bababa;
+  --accent2: #8d8d8d;
+  --accent3: #a6cbeb;
+  --accent4: #4c96d7;
+  --accent5: #3a3a3a;
+  --accent6: #ffffff;
+
+  --font1: 'Ubuntu Mono', sans-serif;
+}
+
+.account_button {
+  position:absolute; right: 80px;
+}
+
+
+html {
+  background-image: url('/phpmotors/images/site/checkerboard.jpg');
+}
+
+body {
+  background-color: white;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#container {
+  margin: 10px 0;
+  background-color: var(--accent6);
+  border-radius: 10px;
+  border: 5px solid var(--accent4);
+  overflow: hidden;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+#header-img {
+  width: 150px;
+}
+#header-button {
+  all: unset;
+  cursor: pointer;
+  margin-right: 10px;
+  color: var(--accent5);
+  font-family: var(--font1);
+}
+
+/* Nav */
+
+nav ul {
+  all: unset;
+  display: flex;
+  background-color: #3a3a3a;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+nav ul > * {
+  all: unset;
+  color: var(--accent1);
+  padding: 5px;
+  cursor: pointer;
+  font-family: var(--font1);
+}
+
+nav ul > *:hover {
+  background-color: var(--accent4);
+  transform: scale(1.1);
+  color: #3a3a3a;
+}
+
+nav ul > * a {
+  all: unset;
+}
+
+/* General main */
+main {
+  margin: 20px 10px;
+  font-family: var(--font1);
+}
+
+/* Home */
+#home_page {
+  position: relative;
+}
+#home_page-top-img {
+  padding: 50px 0 30px 0;
+  width: 100%;
+}
+
+#home_page-top-welcome_message {
+  position: absolute;
+}
+#home_page-top-welcome_message-blue_part {
+  width: 180px;
+  padding: 10px;
+  color: var(--accent4);
+}
+#home_page-top-welcome_message-blue_part h2 {
+  font-weight: bold;
+  font-size: 120%;
+}
+#home_page-top-welcome_message-button {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  background-color: var(--accent4);
+  padding: 10px;
+  border: 1px solid var(--accent5);
+  color: var(--accent5);
+  width: 150px;
+  height: 20px;
+  bottom: 0;
+  margin: auto;
+  font-size: 150%;
+  font-weight: 700;
+}
+#home_page-bottom {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#home_page-bottom-first {
+  margin-top: 20px;
+  grid-row-start: 1;
+}
+
+#home_page-bottom-first-ul {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#home_page-bottom-second {
+  margin-top: 20px;
+}
+#home_page-bottom-second-boxes {
+  grid-row-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
+}
+
+#home_page-bottom-second-boxes > div {
+  width: 100%;
+  height: 92px;
+  background-color: var(--accent3);
+  position: relative;
+  margin-bottom: 30px;
+}
+#home_page-bottom-second-boxes > div > img {
+  padding-top: 10px;
+  display: block;
+  margin: auto;
+}
+#home_page-bottom-second-boxes > div > a {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(25px);
+  text-align: center;
+  width: 100%;
+  color: var(--accent5);
+}
+
+footer {
+  border-top: 3px solid var(--accent5);
+  padding: 10px;
+}
+
+footer > * {
+  font-family: var(--font1);
+
+  text-align: center;
+}
+
+/* Medium */
+@media (min-width: 550px) {
+  #container {
+    margin: 10px 10%;
+  }
+  #header-img {
+    width: initial;
+  }
+  #header-button {
+    margin-right: 30px;
+    font-size: 150%;
+  }
+  #nav-list > * {
+    padding: 15px;
+  }
+  #home_page-top-welcome_message {
+    font-size: 120%;
+  }
+  #home_page-top-welcome_message-blue_part {
+    width: 200px;
+    padding: 20px;
+  }
+  #home_page-top-welcome_message-button {
+    width: 200px;
+    height: 30px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  #container {
+    margin: 10px 15%;
+  }
+  #home_page {
+    font-size: 130%;
+  }
+  #home_page-top-welcome_message-blue_part {
+    width: 300px;
+    padding: 35px;
+  }
+  #home_page-top-welcome_message-button {
+    left: 30px;
+    top: 160px;
+    width: 150px;
+    font-size: 100%;
+    height: 20px;
+    margin-top: 30px;
+    position: absolute;
+  }
+  #home_page-bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  #home_page-bottom-first {
+    grid-column: 2/3;
+  }
+  #home_page-bottom-first-ul,
+  #home_page-bottom-second-boxes {
+    font-size: 80%;
+    padding: 20px;
+  }
+}

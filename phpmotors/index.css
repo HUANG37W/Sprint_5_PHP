@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --accent1: #bababa;
+  --accent2: #8d8d8d;
+  --accent3: #a6cbeb;
+  --accent4: #3a73a5;
+  --accent5: #3a3a3a;
+  --accent6: #ffffff;
+
+  --font1: 'Ubuntu Mono', sans-serif;
+}
+
+body {
+  background-image: url('images/site/small_check.jpg');
+}
+
+input:required:invalid,
+input:focus:invalid {
+  color: var(--accent1);
+}
+
+.hint {
+  color: var(--accent5);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.notice {
+  text-align: center;
+}
+
+/* input:required:valid {
+} */
+
+#container {
+  margin: 10px 0;
+  background-color: var(--accent6);
+  border-radius: 10px;
+  border: 5px solid var(--accent4);
+  overflow: hidden;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#header-img {
+  width: 150px;
+}
+
+#header-welcome {
+  line-height: 74px;
+  font-size: 20px;
+}
+
+#header-welcome a {
+  all: unset;
+  cursor: pointer;
+}
+#header-button {
+  all: unset;
+  cursor: pointer;
+  margin-right: 40px;
+  line-height: 54px;
+  color: var(--accent5);
+  font-family: var(--font1);
+}
+
+#header-button a {
+  all: unset;
+}
+
+#search-icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+#search-icon img {
+  width: 40px;
+  height: 40px;
+}
+/* Nav */
+nav ul {
+  all: unset;
+  display: flex;
+  background-color: #3a3a3a;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+nav ul > * {
+  all: unset;
+  color: var(--accent1);
+  padding: 5px;
+  cursor: pointer;
+  font-family: var(--font1);
+}
+
+nav ul > *:hover {
+  background-color: var(--accent4);
+  transform: scale(1.1);
+  color: #3a3a3a;
+}
+
+nav ul > * a {
+  all: unset;
+}
+/* General main */
+main {
+  margin: 20px 10px;
+  font-family: var(--font1);
+}
+
+/* Home */
+#home_page {
+  position: relative;
+}
+#home_page-top-img {
+  padding: 50px 0 30px 0;
+  width: 100%;
+}
+
+#home_page-top-welcome_message {
+  position: absolute;
+}
+#home_page-top-welcome_message-blue_part {
+  width: 180px;
+  padding: 10px;
+  color: var(--accent4);
+}
+#home_page-top-welcome_message-blue_part h2 {
+  font-weight: bold;
+  font-size: 120%;
+}
+#home_page-top-welcome_message-button {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  background-color: var(--accent4);
+  padding: 10px;
+  border: 1px solid var(--accent5);
+  color: var(--accent5);
+  width: 150px;
+  height: 20px;
+  bottom: 0;
+  margin: auto;
+  font-size: 150%;
+  font-weight: 700;
+}
+#home_page-bottom {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#home_page-bottom-first {
+  margin-top: 20px;
+  grid-row-start: 1;
+}
+
+#home_page-bottom-first-ul {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#home_page-bottom-second {
+  margin-top: 20px;
+}
+#home_page-bottom-second-boxes {
+  grid-row-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 10px;
+}
+
+#home_page-bottom-second-boxes > div {
+  width: 100%;
+  height: 92px;
+  background-color: var(--accent3);
+  position: relative;
+  margin-bottom: 30px;
+}
+#home_page-bottom-second-boxes > div > img {
+  padding-top: 10px;
+  display: block;
+  margin: auto;
+}
+#home_page-bottom-second-boxes > div > a {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(25px);
+  text-align: center;
+  width: 100%;
+  color: var(--accent5);
+}
+
+/* Login Page */
+#login {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  color: var(--accent4);
+}
+
+#login h1 {
+  padding: 30px;
+  text-align: center;
+}
+
+#login-form {
+  text-align: center;
+}
+
+#login-form fieldset {
+  padding: 20px;
+}
+
+#login-form fieldset div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: left;
+  max-width: 200px;
+  margin: auto;
+}
+
+#login-form fieldset legend {
+  font-size: 25px;
+  font-family: var(--font1);
+}
+
+#login-form fieldset legend label {
+  font-size: 20px;
+  font-family: var(--font1);
+}
+#login-form fieldset > input {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--accent4);
+  color: var(--accent6);
+  padding: 5px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent5);
+}
+
+#login-form fieldset #login-form-to_sign_up {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Registration Page */
+#register {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  color: var(--accent4);
+}
+
+#register h1 {
+  padding: 30px;
+  text-align: center;
+}
+
+#register-form {
+  text-align: center;
+}
+
+#register-form fieldset {
+  padding: 20px;
+}
+
+#register-form fieldset div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: left;
+  max-width: 200px;
+  margin: auto;
+}
+
+#register-form fieldset legend {
+  font-size: 25px;
+  font-family: var(--font1);
+}
+
+#register-form fieldset > input {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--accent4);
+  color: var(--accent6);
+  padding: 5px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent5);
+}
+
+#register-form fieldset #register-form-to_login {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#vehicle_controller h1 {
+  margin-bottom: 30px;
+}
+#vehicle_controller > * {
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+#classificationList {
+  display: block;
+  margin: 10px auto;
+}
+#inventoryDisplay {
+  margin: auto;
+  background-color: var(--accent3);
+  border-radius: 10px;
+  border-spacing: 1px 3px;
+}
+#inventoryDisplay th,
+#inventoryDisplay td {
+  border-bottom: 1px black dotted;
+  padding: 10px;
+}
+
+#vehicle_controller-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+#vehicle_controller-buttons div {
+  margin: 25px 10px;
+}
+#vehicle_controller-buttons div a {
+  all: unset;
+  padding: 10px;
+  background-color: var(--accent3);
+  border-radius: 10px;
+  border: 2px solid var(--accent4);
+}
+
+#vehicle_controller-buttons div a:hover {
+  cursor: pointer;
+}
+
+#add_classification {
+  max-width: 400px;
+  margin: auto;
+}
+#add_classification h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#add_classification p {
+  text-align: center;
+}
+#add_classification-form fieldset {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#add_classification-form fieldset legend {
+  text-align: center;
+  color: var(--accent4);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#add_classification-form fieldset div {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#add_classification-form fieldset div #new-classification {
+  max-width: 150px;
+  margin: auto;
+}
+
+#addCBtn {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--accent4);
+  color: var(--accent6);
+  padding: 5px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent5);
+
+  max-width: 150px;
+  margin: auto;
+}
+
+#add_vehicle {
+  max-width: 400px;
+  margin: auto;
+}
+#add_vehicle h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#add_vehicle p {
+  text-align: center;
+}
+
+#add_vehicle-form fieldset {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#add_vehicle-form fieldset legend {
+  text-align: center;
+  color: var(--accent4);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#add_vehicle-form fieldset div {
+  margin: 20px;
+  text-align: center;
+}
+
+#add_vehicle-form #imageDiv,
+#add_vehicle-form #thumbnailDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#add_vehicle-form #image,
+#add_vehicle-form #thumbnail {
+  width: 100px;
+}
+
+#addVBtn {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--accent4);
+  color: var(--accent6);
+  padding: 5px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent5);
+}
+
+#user-login_message {
+  margin: 10px 0;
+}
+
+#admin-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#admin-management_heading,
+#user-update_heading {
+  margin-top: 20px;
+}
+#admin-management_hint,
+#user-update_hint {
+  margin: 0 0 20px 0;
+}
+
+#admin-management_link,
+#user-update_link {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--accent4);
+  color: var(--accent6);
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--accent5);
+}
+
+#update_vehicle-form fieldset {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#update_vehicle-form fieldset legend {
+  text-align: center;
+  color: var(--accent4);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#update_vehicle-form fieldset div {
+  margin: 20px;
+  text-align: center;
+}
+
+#delete_vehicle-form fieldset {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#delete_vehicle-form fieldset legend {
+  text-align: center;
+  color: var(--accent4);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#delete_vehicle-form fieldset div {
+  margin: 20px;
+  text-align: center;
+}
+#update-client h1 {
+  text-align: center;
+  margin: 10px;
+}
+#update_client-form fieldset {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#update_client-form fieldset legend {
+  text-align: center;
+  color: var(--accent4);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#update_client-form fieldset div {
+  margin: 20px;
+  text-align: center;
+}
+
+#updateBtn,
+#updatePasswordBtn {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--accent4);
+  color: var(--accent6);
+  padding: 5px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent5);
+}
+
+#update_client_password-form fieldset {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#update_client_password-form fieldset legend {
+  text-align: center;
+  color: var(--accent4);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#update_client_password-form fieldset div {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  margin: auto;
+}
+#update_client_password-form fieldset div label {
+  margin: 10px 0;
+}
+#update_client_password-form fieldset div #password {
+  max-width: 100px;
+  margin: auto;
+}
+
+#inv-display {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#inv-display li {
+  margin-bottom: 0.5em;
+  border: 1px #ccc solid;
+  list-style-type: none;
+  flex: 1 1 auto;
+}
+
+#inv-display li img {
+  max-width: 100%;
+}
+#vehicleDetail h1 {
+  text-align: center;
+  margin: 20px;
+}
+#vehicleDetailBox {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+#vehicleDetailBox img {
+  width: 100%;
+}
+
+#vehicleInfo {
+  margin: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer {
+  border-top: 3px solid var(--accent5);
+  padding: 10px;
+}
+
+footer > * {
+  font-family: var(--font1);
+
+  text-align: center;
+}
+
+/* Medium */
+@media (min-width: 600px) {
+  #container {
+    margin: 10px 10%;
+  }
+  #header-img {
+    width: initial;
+  }
+  #header-button {
+    margin-right: 50px;
+    padding: 10px;
+    font-size: 150%;
+  }
+  #search-icon {
+    top: 16px;
+    right: 10px;
+  }
+  nav ul > * {
+    padding: 15px;
+  }
+  #home_page-top-welcome_message {
+    font-size: 120%;
+  }
+  #home_page-top-welcome_message-blue_part {
+    width: 200px;
+    padding: 20px;
+  }
+  #home_page-top-welcome_message-button {
+    width: 200px;
+    height: 30px;
+  }
+  /* For vehicle display in classification view */
+  #inv-display {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #inv-display h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  #inv-display li {
+    max-width: 200px;
+    flex: 1 0 auto;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #inv-display div {
+    width: 100%;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  #container {
+    margin: 10px 15%;
+  }
+  #home_page {
+    font-size: 130%;
+  }
+  #home_page-top-welcome_message-blue_part {
+    width: 300px;
+    padding: 35px;
+  }
+  #home_page-top-welcome_message-button {
+    left: 30px;
+    top: 160px;
+    width: 150px;
+    font-size: 100%;
+    height: 20px;
+    margin-top: 30px;
+    position: absolute;
+  }
+  #home_page-bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  #home_page-bottom-first {
+    grid-column: 2/3;
+  }
+  #home_page-bottom-first-ul,
+  #home_page-bottom-second-boxes {
+    font-size: 80%;
+    padding: 20px;
+  }
+  #vehicleDetailBox {
+    display: flex;
+    max-width: 800px;
+  }
+  #vehicleDetailBox img {
+    width: 50%;
+  }
+}
