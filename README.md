@@ -2,35 +2,26 @@
 
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+In this enhancement you will:
 
-{Provide a description the software that you wrote.}
+1. Alter the code for each vehicle being delivered to the classification view so that a link exists for that specific vehicle. When the link is clicked, a "vehicle detail" view is delivered where complete details about that vehicle are displayed.
+2. Style the vehicle information to display clearly and professionally in any size browser window.
 
-{Describe your purpose for writing this software.}
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-
-
 XAMPP Control Panel v3.3.0
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [W3 School](https://www.w3schools.com/php/php_compiler.asp)
+* [PHP](https://www.php.net/)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 * Item 1
 * Item 2
 * Item 3
