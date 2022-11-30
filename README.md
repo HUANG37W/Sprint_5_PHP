@@ -15,6 +15,7 @@ In this enhancement you will:
 
 XAMPP Control Panel v3.3.0
 
+Visual Studio Code
 
 # Useful Websites
 
@@ -22,6 +23,6 @@ XAMPP Control Panel v3.3.0
 * [PHP](https://www.php.net/)
 
 # Future Work
-* Item 1
-* Item 2
-* Item 3
+* Search bar 
+* Link to Youtube Video for each car model
+* Game display for car model
